@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@100;300;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--Como buenas practicas siempre es mejor tener 1 solo h1 por pagina de HTML -->
+    <!--Metodologia BEM-->
+    <header>
+      <img src="./assets/img/logo.svg" alt="logo">
+      <div class="header--title-container">
+          <h1>
+            La próxima revolución en el intercambio de criptomonedas.
+          </h1> 
+          <p>
+            Batatabit te ayuda a navegar entre los diferentes precios y tendencias.
+          </p>
+          <a href="" class="header--button">
+            Conoce Nuestros Planes 
+            <span></span>
+          </a>
+      </div>
+    </header>
+    <main>
+      <section class="main-exchange-container">
+        <div class="backgroundImg">
+        </div>
+        <div class="main-exchange-container--title">
+          <h2>Visibilizamos todas las tasas de cambio.</h2>
+          <p>Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.</p>
+        </div>
+         <!-- Tambien se puede hacer con CSS Grid  -->
+         <div class="corrousel">
+            <section class="main-tables-container grande">
+              <div class="main-table">
+              <p class="currency-table--title">Monedas</p>
+              <div class="currency-table--container">
+                <table>
+                  <tr>
+                    <td class="table__top-left">Bitcoin</td>
+                    <td class="table__top-right table__right">$ 1.96 <span class="dowm"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Ethereum</td>
+                    <td class="table__right">$ 0.07 <span class="up"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Ripple</td>
+                    <td class="table__right">$ 2.15 <span class="dowm"></span></td>
+                  </tr>
+                  <tr>
+                    <td class="table__bottom-left">Stellar</td>
+                    <td class="table__bottom-right table__right">$ 4.96 <span class="up"></span></td>
+                  </tr>
+                </table>
+                
+              </div>
+              <div>
+                <p>Actualizado el: <script> document.write(new Date().toLocaleString());</script> </p>
+              </div>
+              <!--<span class="slide-right"></span>-->
+              </div>
+              <div class="main-table">
+              <p class="currency-table--title title-commision">Comisiones</p>
+              <div class="currency-table--container">
+                <table>
+                  <tr>
+                    <td class="table__top-left">Biltrade</td>
+                    <td class="table__top-right table__right">$ 12.96</td>
+                  </tr>
+                  <tr>
+                    <td>Bitpreco</td>
+                    <td class="table__right">$ 13.07</td>
+                  </tr>
+                  <tr>
+                    <td>Novadax</td>
+                    <td class="table__right">$ 13.15</td>
+                  </tr>
+                  <tr>
+                    <td class="table__bottom-left">Coinext</td>
+                    <td class="table__bottom-right table__right">$ 14.96</td>
+                  </tr>
+                </table>
+              </div>
+              <div>
+                <p>Actualizado el: <script> document.write(new Date().toLocaleString());</script> </p>
+                </div>
+              </div>
+            </section>
+            <ul class="puntos">
+              <li class="punto activo"></li>
+              <li class="punto"></li>
+            </ul>
+         </div>
+
+
+
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
