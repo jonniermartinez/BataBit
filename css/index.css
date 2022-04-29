@@ -146,6 +146,7 @@ background-position: center;
   max-width: 500px;
   height: 360px;
   font-family: "Inter", sans-serif;
+  margin: 0 auto;
 }
 .main-table .currency-table--title{
   margin-bottom: 15px;
@@ -214,6 +215,24 @@ background-position: center;
   background-position: center;
   background-repeat: no-repeat;
 }
+.currency-table--date{
+  width: 190px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 8px;
+  background-color: var(--soft-orange);
+}
+.date--blue{
+  background-color: var(--soft-blue);
+}
+.currency-table--date p{
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+  color: var(--warm-black);
+}
+
 /*--------------------- Slide ---------------------------*/
 .corrousel{
   width: 90%;
@@ -253,4 +272,90 @@ background-position: center;
   background-color: var(--warm-black);
 }
 /* ------------------------------------------------------ */
+/* Seccion de beneficios */
+.main-profuct-detail{
+ position: relative;
+ width: 100%;
+ min-width: 320px; /*para que no se haga mas chico que 320px*/
+ height: auto;
+ padding: 20px 10px;
+ background: var(--warm-black);
+}
+.product-detail__batata-logo{
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Que sería lo mismo a poner translate(-20px, -12.5px); */  
+  width: 40px;
+  height: 25px;
+  background-image: url(../assets/icons/batata.svg);
+}
+.product-detail--title{
+width: 90%;
+min-width: 288px;
+height: auto;
+ margin: 0 auto;
+ margin-top: 50px;
+ text-align: center;
+}
+.product-detail--title h2{
+margin-bottom: 20px;
+font-size: 2.4rem;
+font-weight: bold;
+line-height: 2.6rem;
+color: var(--just-withe);
+}
+.product-detail--title p{
+ margin-bottom: 20px;
+ font-size: 1.4rem;
+ font-weight: 500;
+ line-height: 1.8rem;
+ color: #808080;
+}
+.product-detail--card{
+ width: 90%;
+ min-width: 288px;
+ max-width: 400px;
+ height: 150px;
+ margin: 15px auto;
+ padding: 15px;
+ background: var(--warm-black-1);
+ border-radius: 5px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16) ; 
+}
+.icon-card{
+display: inline-block;
+ width: 20px;
+ height: 20px;
+ margin-bottom: 10px;
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+}
+.clock{
+ background-image: url(../assets/icons/clock.svg);
+}
+.eye{
+background-image: url(../assets/icons/eye.svg);
+}
+.money{
+background-image: url(../assets/icons/dollar-sign.svg);
+}
+.checkList{
+ background-image: url(../assets/icons/check-circle.svg);
+}
+.product--card-title{
+ margin-bottom: 15px;
+ font-size: 1.8rem;
+ font-weight: bold;
+ line-height: 1.8rem;
+ color: var(--just-withe);
+}
+.product--card-body{
+ font-size: 1.4rem;
+ font-weight: 500;
+ line-height: 1.8rem;
+ color: #808080;
+}
 
+/*-----------------------------------------------------*/
