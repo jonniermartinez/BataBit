@@ -1,141 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title></title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@100;300;500&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <!--Como buenas practicas siempre es mejor tener 1 solo h1 por pagina de HTML -->
-    <!--Metodologia BEM-->
-    <header>
-      <img src="./assets/img/logo.svg" alt="logo">
-      <div class="header--title-container">
-          <h1>
-            La próxima revolución en el intercambio de criptomonedas.
-          </h1> 
-          <p>
-            Batatabit te ayuda a navegar entre los diferentes precios y tendencias.
-          </p>
-          <a href="" class="header--button">
-            Conoce Nuestros Planes 
-            <span></span>
-          </a>
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@100;300;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!--Como buenas practicas siempre es mejor tener 1 solo h1 por pagina de HTML -->
+  <!--Metodologia BEM-->
+  <header>
+    <img src="./assets/img/logo.svg" alt="logo">
+    <div class="header--title-container">
+      <h1>
+        La próxima revolución en el intercambio de criptomonedas.
+      </h1>
+      <p>
+        Batatabit te ayuda a navegar entre los diferentes precios y tendencias.
+      </p>
+      <a href="" class="header--button">
+        Conoce Nuestros Planes
+        <span></span>
+      </a>
+    </div>
+  </header>
+  <main>
+    <section class="main-exchange-container">
+      <div class="backgroundImg">
       </div>
-    </header>
-    <main>
-      <section class="main-exchange-container">
-        <div class="backgroundImg">
-        </div>
-        <div class="main-exchange-container--title">
-          <h2>Visibilizamos todas las tasas de cambio.</h2>
-          <p>Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.</p>
-        </div>
-         <!-- También se puede hacer con CSS Grid  -->
-         <div class="corrousel1">
-            <section class="main-tables-container grand3">
-              <div class="main-table">
-              <p class="currency-table--title">Monedas</p>
-              <div class="currency-table--container">
-                <table>
-                  <tr>
-                    <td class="table__top-left">Bitcoin</td>
-                    <td class="table__top-right table__right">$ 1.96 <span class="dowm"></span></td>
-                  </tr>
-                  <tr>
-                    <td>Ethereum</td>
-                    <td class="table__right">$ 0.07 <span class="up"></span></td>
-                  </tr>
-                  <tr>
-                    <td>Ripple</td>
-                    <td class="table__right">$ 2.15 <span class="dowm"></span></td>
-                  </tr>
-                  <tr>
-                    <td class="table__bottom-left">Stellar</td>
-                    <td class="table__bottom-right table__right">$ 4.96 <span class="up"></span></td>
-                  </tr>
-                </table>
-                
-              </div>
-              <div class="currency-table--date ">
-                <p><b>Actualizado el:</b> <script> document.write(new Date().toLocaleString());</script> </p>
-              </div>
-              <!--<span class="slide-right"></span>-->
-              </div>
-              <div class="main-table">
-              <p class="currency-table--title title-commision">Comisiones</p>
-              <div class="currency-table--container">
-                <table>
-                  <tr>
-                    <td class="table__top-left">Biltrade</td>
-                    <td class="table__top-right table__right">$ 12.96</td>
-                  </tr>
-                  <tr>
-                    <td>Bitpreco</td>
-                    <td class="table__right">$ 13.07</td>
-                  </tr>
-                  <tr>
-                    <td>Novadax</td>
-                    <td class="table__right">$ 13.15</td>
-                  </tr>
-                  <tr>
-                    <td class="table__bottom-left">Coinext</td>
-                    <td class="table__bottom-right table__right">$ 14.96</td>
-                  </tr>
-                </table>
-              </div>
-              <div class="currency-table--date date--blue">
-                <p><b>Actualizado el: </b><script> document.write(new Date().toLocaleString());</script> </p>
-                </div>
-              </div>
-            </section>
-            <!-- <ul class="puntos"> -->
-            <!--   <li class="punto activo"></li> -->
-            <!--   <li class="punto"></li> -->
-            <!-- </ul> -->
-         </div>
+      <div class="main-exchange-container--title">
+        <h2>Visibilizamos todas las tasas de cambio.</h2>
+        <p>Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.</p>
+      </div>
+      <!-- También se puede hacer con CSS Grid  -->
+      <div class="corrousel1">
+        <section class="main-tables-container grand3">
+          <div class="main-table">
+            <p class="currency-table--title">Monedas</p>
+            <div class="currency-table--container">
+              <table>
+                <tr>
+                  <td class="table__top-left">Bitcoin</td>
+                  <td class="table__top-right table__right">$ 1.96 <span class="dowm"></span></td>
+                </tr>
+                <tr>
+                  <td>Ethereum</td>
+                  <td class="table__right">$ 0.07 <span class="up"></span></td>
+                </tr>
+                <tr>
+                  <td>Ripple</td>
+                  <td class="table__right">$ 2.15 <span class="dowm"></span></td>
+                </tr>
+                <tr>
+                  <td class="table__bottom-left">Stellar</td>
+                  <td class="table__bottom-right table__right">$ 4.96 <span class="up"></span></td>
+                </tr>
+              </table>
+
+            </div>
+            <div class="currency-table--date ">
+              <p><b>Actualizado el:</b>
+                <script> document.write(new Date().toLocaleString());</script>
+              </p>
+            </div>
+            <!--<span class="slide-right"></span>-->
+          </div>
+          <div class="main-table">
+            <p class="currency-table--title title-commision">Comisiones</p>
+            <div class="currency-table--container">
+              <table>
+                <tr>
+                  <td class="table__top-left">Biltrade</td>
+                  <td class="table__top-right table__right">$ 12.96</td>
+                </tr>
+                <tr>
+                  <td>Bitpreco</td>
+                  <td class="table__right">$ 13.07</td>
+                </tr>
+                <tr>
+                  <td>Novadax</td>
+                  <td class="table__right">$ 13.15</td>
+                </tr>
+                <tr>
+                  <td class="table__bottom-left">Coinext</td>
+                  <td class="table__bottom-right table__right">$ 14.96</td>
+                </tr>
+              </table>
+            </div>
+            <div class="currency-table--date date--blue">
+              <p><b>Actualizado el: </b>
+                <script> document.write(new Date().toLocaleString());</script>
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- <ul class="puntos"> -->
+        <!--   <li class="punto activo"></li> -->
+        <!--   <li class="punto"></li> -->
+        <!-- </ul> -->
+      </div>
+    </section>
+    <!-- ---------------Seccion de beneficios----------------------- -->
+    <section class="main-profuct-detail">
+      <span class="product-detail__batata-logo"></span>
+      <div class="product-detail--title">
+        <h2>Te ayudamos a tomar la mejor decisión, siempre.</h2>
+        <p>Que la incertidumbre en materia de criptomonedas sea cosa del pasado.</p>
+      </div>
+      <section class="product-cards--container">
+        <article class="product-detail--card">
+          <span class="icon-card clock"></span>
+          <p class="product--card-title">Tiempo real</p>
+          <p class="product--card-body">Nuestro API toma información minuto a minuto sobre las tasas que más determinan
+            el comportamiento.</p>
+        </article>
       </section>
-<!-- ---------------Seccion de beneficios----------------------- -->
-      <section class="main-profuct-detail">
-        <span class="product-detail__batata-logo"></span>
-        <div class="product-detail--title">
-          <h2>Te ayudamos a tomar la mejor decisión, siempre.</h2>
-          <p>Que la incertidumbre en materia de criptomonedas sea cosa del pasado.</p>
-        </div>
-        <section class="product-cards--container">
-          <article class="product-detail--card">
-            <span class="icon-card clock"></span>
-            <p class="product--card-title">Tiempo real</p>
-            <p class="product--card-body">Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.</p>
-          </article>
-        </section>
-        <section class="product-cards--container">
-          <article class="product-detail--card">
-            <span class="icon-card eye"></span>
-            <p class="product--card-title">No hay tasas escondidas</p>
-            <p class="product--card-body">Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo.</p>
-          </article>
-        </section>
-        <section class="product-cards--container">
-          <article class="product-detail--card">
-            <span class="icon-card money"></span>
-            <p class="product--card-title">Compara monedas</p>
-            <p class="product--card-body">No más rumores, con Babtabit sabrás el valor real de cada moneda en el mercado actual.</p>
-          </article>
-        </section>
-        <section class="product-cards--container">
-          <article class="product-detail--card">
-            <span class="icon-card checkList"></span>
-            <p class="product--card-title">Información confiable</p>
-            <p class="product--card-body">Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan.</p>
-          </article>
+      <section class="product-cards--container">
+        <article class="product-detail--card">
+          <span class="icon-card eye"></span>
+          <p class="product--card-title">No hay tasas escondidas</p>
+          <p class="product--card-body">Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real
+            de lo que estás adquiriendo.</p>
+        </article>
+      </section>
+      <section class="product-cards--container">
+        <article class="product-detail--card">
+          <span class="icon-card money"></span>
+          <p class="product--card-title">Compara monedas</p>
+          <p class="product--card-body">No más rumores, con Babtabit sabrás el valor real de cada moneda en el mercado
+            actual.</p>
+        </article>
+      </section>
+      <section class="product-cards--container">
+        <article class="product-detail--card">
+          <span class="icon-card checkList"></span>
+          <p class="product--card-title">Información confiable</p>
+          <p class="product--card-body">Nuestras fuentes están 100% verificadas y continuamos auditando su contenido
+            mientras se actualizan.</p>
+        </article>
+      </section>
+    </section>
+    <!-- Section de COmodin -->
+    <section class="bitcoin-img-container">
+      <h2>Conocelo hoy</h2>
+    </section>
+    <!-- Seccion de planes  -->
+      <section class="main-plans-container">
+        <div class="plans--title">
+          <h3>Escoge el plan que mejor se ajuste a ti.</h3>
+          <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
+        </div> 
+        <section class="plans-container--slider">
+          <article class="plans-container--card">
+            <div class="plan-info-container">
+              <h3 class="plan-card--title">Pago Mensual</h3>
+              <p class="plan-card--price" ><span>$</span>5</p>
+              <p class="plan-card--saving">* Plan basico para mantenerte informado</p>
+              <button class="plan-card--callToAction">Escoger este <span></span></button>
+            </div>
+          </article> 
+          <article class="plans-container--card">
+            <p class="recomendado">Recomendado</p>
+            <div class="plan-info-container">
+              <h3 class="plan-card--title">Pago Anual</h3>
+              <p class="plan-card--price" ><span>$</span>49</p>
+              <p class="plan-card--saving">* Ahorras $129 comprando el plan mensual.</p>
+              <button class="plan-card--callToAction callToAction--Orange">Escoger este <span></span></button>
+            </div>
+          </article> 
+          <article class="plans-container--card">
+            <div class="plan-info-container">
+              <h3 class="plan-card--title">Acceso de por vida</h3>
+              <p class="plan-card--price" ><span>$</span>99</p>
+              <p class="plan-card--saving">* Ahorras $999+ comprando el plan mensual.</p>
+              <button class="plan-card--callToAction">Escoger este <span></span></button>
+            </div>
+          </article> 
         </section>
       </section>
-    </main>
-    <script src="./index.js"></script>
-  </body>
+  </main>
+  <script src="./index.js"></script>
+</body>
+
 </html>
