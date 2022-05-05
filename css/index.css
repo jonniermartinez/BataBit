@@ -165,6 +165,13 @@ background-position: center;
   height: 250px;
   margin: 0 auto;
 }
+.main-tables-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 320px);
+  gap: 10px;
+  justify-content: center;
+  
+}
 .currency-table--container table{
  width: 100%;
  height: 100%;
@@ -273,6 +280,13 @@ background-position: center;
 }
 /* ------------------------------------------------------ */
 /* Seccion de beneficios */
+.main-product--container{
+  width: 100%;
+  max-width: 938px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
+  margin: 0 auto;
+}
 .main-profuct-detail{
  position: relative;
  width: 100%;
@@ -490,13 +504,76 @@ background-image: url(../assets/icons/dollar-sign.svg);
   /* gap: 50px; */
   width: 100%;
   height: 316px;
-  overflow-x: scroll;
+  overflow-x: auto;
   overscroll-behavior-x: contain;
-  scroll-snap-type: x proximity;
-
+  scroll-snap-type: x mandatory;
+  scroll-snap-align: center;
+  justify-content: center;
 }
 /*-------------------------------------------*/
+.questions--container{
+  width: 90%;
+  height: auto;
+  margin: 30px auto;
+}
+.questions--container h2{
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 26px;
+  margin-bottom: 32px;
+}
+.questions--container p{
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 18px;
+  margin-bottom: 15px;
+  position: relative;
+  text-align: center;
+}
+.questions--container p span{
+  width: 12px;
+  height: 8px;
+  display: inline-block;
+  background-image: url(../assets/icons/down-arrow.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+ /* position: absolute; */
+ /* top: 50%; */
+ /* left: 30px; */
+  margin-left: 15px;
+}
+/*Footer*/
+.footer{
+  display: flex;
+  width: 100%;
+  height: 150px;
+  background-color: var(--bitcoin-orange);
+}
+.footer section{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .left ul{
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  list-style: none;
+} 
+.left li{
+ margin: 10px 0;
+}
+.left a{
+  text-decoration: none;
+  color: var(--just-withe);
+}
+
 .displaynone{
   display:none;
-
+}
+@media (min-width: 1024px) {
+ 
 }
